@@ -5,16 +5,16 @@ const velocities = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
 
 function startCounter() {
   const units = [
-    49877536490, // gallinas
-     2676365000, // patos
-     1375940758, // cerdos
-      635382008, // pavos
-      564785251, // ovejas
-      402611664, // cabras
-      301275455, // vacas y terneros
-       23199336, // bufalos
-        5018470, // caballos
-        1501799  // camellos y otros camelidos
+    49877536490, // chickens
+     2676365000, // ducks
+     1375940758, // pigs
+      635382008, // turkeys
+      564785251, // sheep
+      402611664, // goats
+      301275455, // cows and calves
+       23199336, // buffalo
+        5018470, // horses
+        1501799  // camels and other camelids
   ];
 
   const updatesPerSecond = 4;
@@ -40,7 +40,7 @@ function updateCounter() {
       num = Math.floor(num / 1000);
     }
     str = num + str;
-    const target = document.getElementById("cant" + i);
+    const target = document.getElementById("count" + i);
     if (target) {
       target.textContent = str;
     }
